@@ -12,7 +12,12 @@ namespace Academy.Service.Services.Interfaces
         Group Create(Group group);
         Group Update(int id,Group group);
         void Delete(int id);
-        Group GetById(int id);
-        List<Group> GetAll();
+        Group GetGroupById(int id);
+        List<Group> GetAllGroupsByTeacher(string teacher);
+        List<Group> GetAllGroupsByRoom(int room);
+        List<Group> GetAllGroups();
+
+
+
     }
 }

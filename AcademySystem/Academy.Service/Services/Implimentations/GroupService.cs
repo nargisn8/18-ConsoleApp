@@ -35,14 +35,29 @@ namespace Academy.Service.Services.Implimentations
             throw new NotImplementedException();
         }
 
-        public List<Group> GetAll()
+        public List<Group> GetAllGroups()
+        {
+            return _groupRepository.GetAllGroups();
+        }
+
+        public List<Group> GetAllGroupsByRoom(int room)
         {
             throw new NotImplementedException();
         }
 
-        public Group GetById(int id)
+        public List<Group> GetAllGroupsByTeacher(string teacher)
         {
-            throw new NotImplementedException();
+            return _groupRepository.GetAllGroupsByTeacher(g=>g.Teacher == teacher);
+            
+        }
+
+        public Group GetGroupById(int id)
+        {
+            Group group = _groupRepository.Get(g=>g.Id == id);
+
+            if (group is null) return null;
+             
+            return group; 
         }
 
         public Group Update(int id, Group group)
