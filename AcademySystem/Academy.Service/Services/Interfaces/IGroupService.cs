@@ -16,6 +16,8 @@ namespace Academy.Service.Services.Interfaces
         List<Group> GetAllGroupsByTeacher(string teacher);
         List<Group> GetAllGroupsByRoom(int room);
         List<Group> GetAllGroups();
+        List<Group> SearchMethodForGroupsByName(string name);
+
 
 
 

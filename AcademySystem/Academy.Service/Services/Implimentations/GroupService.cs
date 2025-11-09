@@ -32,7 +32,9 @@ namespace Academy.Service.Services.Implimentations
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            Group group = GetGroupById(id);
+
+            _groupRepository.Delete(group);
         }
 
         public List<Group> GetAllGroups()
@@ -42,12 +44,12 @@ namespace Academy.Service.Services.Implimentations
 
         public List<Group> GetAllGroupsByRoom(int room)
         {
-            throw new NotImplementedException();
+            return _groupRepository.GetAllGroups(g => g.Room == room);
         }
 
         public List<Group> GetAllGroupsByTeacher(string teacher)
         {
-            return _groupRepository.GetAllGroupsByTeacher(g=>g.Teacher == teacher);
+            return _groupRepository.GetAllGroups(g=>g.Teacher == teacher);
             
         }
 
@@ -58,6 +60,11 @@ namespace Academy.Service.Services.Implimentations
             if (group is null) return null;
              
             return group; 
+        }
+
+        public List<Group> SearchMethodForGroupsByName(string name)
+        {
+            return _groupRepository.GetAllGroups(g => g.Name == name);
         }
 
         public Group Update(int id, Group group)

@@ -16,6 +16,8 @@ namespace Academy.Repository.Repositories.Interfaces
         List<T> GetAllGroupsByTeacher(Predicate<T> predicate);
         List<T> GetAllGroupsByRoom(Predicate<T> predicate);
         List<T> GetAllGroups(Predicate<T> predicate);
+        
+
 
     }
 }

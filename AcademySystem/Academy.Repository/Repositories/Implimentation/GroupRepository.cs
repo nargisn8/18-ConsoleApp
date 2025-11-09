@@ -23,7 +23,7 @@ namespace Academy.Repository.Repositories.Implimentation
 
         public void Delete(Group data)
         {
-            throw new NotImplementedException();
+            AppDbContext<Group>.datas.Remove(data);
         }
 
         public Group Get(Predicate<Group> predicate)
@@ -37,9 +37,9 @@ namespace Academy.Repository.Repositories.Implimentation
             return predicate != null ? AppDbContext<Group>.datas.FindAll(predicate) : AppDbContext<Group>.datas;
         }
 
-        public List<Group> GetAllGroupsByRoom(Predicate<Group> predicate)
+        public List<Group> GetAllGroupsByRoom(Predicate<Group> predicate = null)
         {
-            throw new NotImplementedException();
+            return predicate != null ? AppDbContext<Group>.datas.FindAll(predicate) : AppDbContext<Group>.datas;
         }
 
         public List<Group> GetAllGroupsByTeacher(Predicate<Group> predicate = null)
