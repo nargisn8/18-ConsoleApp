@@ -49,7 +49,21 @@ namespace Academy.Repository.Repositories.Implimentation
 
         public void Update(Group data)
         {
-            throw new NotImplementedException();
+            Group dbgroup = Get(g => g.Id == data.Id);
+            if (!string.IsNullOrEmpty(data.Name))
+            {
+                data.Name = dbgroup.Name;
+            }
+
+            if (!string.IsNullOrEmpty(data.Teacher))
+            {
+                data.Teacher = dbgroup.Teacher;
+            }
+
+            if (!string.IsNullOrEmpty(data.Room.ToString()))
+            {
+                data.Room = dbgroup.Room;
+            }
         }
     }
 }

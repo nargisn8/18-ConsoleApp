@@ -69,7 +69,17 @@ namespace Academy.Service.Services.Implimentations
 
         public Group Update(int id, Group group)
         {
-            throw new NotImplementedException();
+            Group dbgroup = GetGroupById(id);
+            if (dbgroup is null) return null;
+
+            dbgroup.Name = group.Name;
+            dbgroup.Teacher = group.Teacher;
+            dbgroup.Room = group.Room;
+            dbgroup.Id = group.Id;
+
+            _groupRepository.Update(dbgroup);
+
+            return dbgroup;
         }
     }
 }
