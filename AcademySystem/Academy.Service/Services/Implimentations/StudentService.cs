@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Academy.Service.Services.Implimentations
 {
@@ -37,14 +38,12 @@ namespace Academy.Service.Services.Implimentations
             return student;
 
         }
-
         public void Delete(int groupId) 
         {
             Student student = GetStudentById(groupId);
 
             _studentRepository.Delete(student);
         }
-
         public Student GetStudentById(int Id)
         {
             Student student = _studentRepository.GetStudentById(s => s.Id == Id);
@@ -60,6 +59,44 @@ namespace Academy.Service.Services.Implimentations
         public List<Student> GetAll()
         {
             return _studentRepository.GetAll();
+        }
+        public Student GetStudentByAge(int age)
+        {
+            Student student = _studentRepository.GetStudentById(s => s.Age == age);
+
+            if (student is null) return null;
+
+            return student;
+        }
+        public List<Student> SearchMethodForStudentsByNameOrSurname(string search)
+        {
+            List<Student> students = _studentRepository.GetAll();
+
+            List<Student> result = new List<Student>();
+
+            foreach (var student in students)
+            {
+                if (student.Name == search || student.Surname == search)
+                {
+                    result.Add(student);
+                }
+            }
+
+            return result;
+        }
+        public Student Update(int id, Student student)
+        {
+            Student dbstudent = GetStudentById(id);
+            if (dbstudent is null) return null;
+
+            dbstudent.Name = student.Name;
+            dbstudent.Surname = student.Surname;
+            dbstudent.Age = student.Age;
+            dbstudent.Id = student.Id;
+
+            _studentRepository.Update(dbstudent);
+
+            return dbstudent;
         }
     }
 }

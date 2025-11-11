@@ -82,6 +82,81 @@ namespace Academy.Presentation.Controllers
         }
         public void Update()
         {
+        Studentid: Helper.PrintConsole(ConsoleColor.Blue, "Add Student Id");
+            string studentId = Console.ReadLine();
+
+            int id;
+
+            bool isstudentId = int.TryParse(studentId, out id);
+
+            if (isstudentId)
+            {
+                var findGroup = _studentService.GetStudentById(id);
+
+                if (findGroup != null)
+                {
+                    Helper.PrintConsole(ConsoleColor.Blue, "Add Student new name");
+                    string updateName = Console.ReadLine();
+
+                    Helper.PrintConsole(ConsoleColor.Blue, "Add Student new surname");
+                    string updateSurname = Console.ReadLine();
+
+                Age: Helper.PrintConsole(ConsoleColor.Blue, "Add Student new age");
+                    string updateAge = Console.ReadLine();
+
+                    int age;
+
+                    bool isstudentage = int.TryParse(updateAge, out age);
+
+                    if (isstudentage || updateAge == "" || updateName == "" || updateSurname == "")
+                    {
+                        bool isAgeEmpty = string.IsNullOrEmpty(updateAge);
+                        bool isNameEmpty = string.IsNullOrEmpty(updateName);
+                        bool isSurnameEmpty = string.IsNullOrEmpty(updateSurname);
+
+                        if (isAgeEmpty)
+                        {
+                            age = findGroup.Age;
+                        }
+                        if (isNameEmpty)
+                        {
+                            updateName = findGroup.Name;
+                        }
+                        if (isSurnameEmpty)
+                        {
+                            updateSurname = findGroup.Surname;
+                        }
+                        Student student = new Student { Name = updateName, Surname = updateSurname, Age = age };
+
+                        var resultStudent = _studentService.Update(age, student);
+
+                        if (resultStudent != null)
+                        {
+                            Helper.PrintConsole(ConsoleColor.Red, "Student not found, please try again.");
+                            goto Studentid;
+                        }
+                        else
+                        {
+                            Helper.PrintConsole(ConsoleColor.DarkMagenta, $"Group Id: {student.Id}, Name: {student.Name}, Surname: {student.Surname}, Age: {student.Age}, Group: {student.Group.Name}");
+                        }
+                    }
+                    else
+                    {
+                        Helper.PrintConsole(ConsoleColor.Red, "Add correct age type");
+                        goto Age;
+                    }
+                }
+                else
+                {
+                    Helper.PrintConsole(ConsoleColor.Red, "Student not found");
+                    goto Studentid;
+                }
+            }
+            else
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Add correct Studentid type");
+                goto Studentid;
+            }
 
         }
         public void GetStudentById()
@@ -127,12 +202,22 @@ namespace Academy.Presentation.Controllers
             if (isstudentId)
             {
                 List<Student> students = _studentService.GetAll();
-                if (studentId == null)
+
+                bool found = false;
+
+                foreach (var s in students)
+                {
+                    if (s.Id == id)
+                    {
+                        found = true;
+                        break;
+                    }
+                }
+                if (!found)
                 {
                     Helper.PrintConsole(ConsoleColor.Red, "Student not found.");
                     goto DeleteText;
                 }
-
                 _studentService.Delete(id);
 
                 Helper.PrintConsole(ConsoleColor.Green, "Student deleted");
@@ -145,7 +230,34 @@ namespace Academy.Presentation.Controllers
         }
         public void GetStudentByAge()
         {
+        Studentage: Helper.PrintConsole(ConsoleColor.Blue, "Add Student age");
+            string studentAge = Console.ReadLine();
 
+            int age;
+
+            bool isstudentage = int.TryParse(studentAge, out age);
+
+            if (isstudentage)
+            {
+                Student student = _studentService.GetStudentByAge(age);
+
+                if (student != null)
+                {
+                    Helper.PrintConsole(ConsoleColor.DarkMagenta, $"Id: {student.Id}, Name: {student.Name}, Surname: {student.Surname}, Age: {student.Age}, Group: {student.Group.Name}");
+                }
+                else
+                {
+                    Helper.PrintConsole(ConsoleColor.Red, "Student not found");
+                    goto Studentage;
+                }
+
+
+            }
+            else
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Select correct id type");
+                goto Studentage;
+            }
         }
         public void GetAllStudentByGroupId()
         {
@@ -188,7 +300,24 @@ namespace Academy.Presentation.Controllers
         }
         public void SearchMethodForStudentsByNameOrSurname()
         {
+        SearchText: Helper.PrintConsole(ConsoleColor.Blue, "Add Student search text");
 
+            string search = Console.ReadLine();
+
+            List<Student> searchStudents = _studentService.SearchMethodForStudentsByNameOrSurname(search);
+
+            if (searchStudents.Count != 0)
+            {
+                foreach (var student in searchStudents)
+                {
+                    Helper.PrintConsole(ConsoleColor.DarkMagenta, $"Student Id: {student.Id}, Name: {student.Name}, Surname: {student.Surname}, Age: {student.Age}, Group: {student.Group.Name}");
+                }
+            }
+            else
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Student not found.");
+                goto SearchText;
+            }
         }
         public void GetAll()
         {

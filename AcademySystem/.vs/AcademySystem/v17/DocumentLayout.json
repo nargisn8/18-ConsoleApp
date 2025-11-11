@@ -3,26 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2836B5C3-2543-4A1C-9848-10F81DAC025A}|Academy.Presentation\\Academy.Presentation.csproj|c:\\users\\nargis\\desktop\\18-consoleapp\\academysystem\\academy.presentation\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2836B5C3-2543-4A1C-9848-10F81DAC025A}|Academy.Presentation\\Academy.Presentation.csproj|solutionrelative:academy.presentation\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2836B5C3-2543-4A1C-9848-10F81DAC025A}|Academy.Presentation\\Academy.Presentation.csproj|c:\\users\\nargis\\desktop\\18-consoleapp\\academysystem\\academy.presentation\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2836B5C3-2543-4A1C-9848-10F81DAC025A}|Academy.Presentation\\Academy.Presentation.csproj|solutionrelative:academy.presentation\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9517F48-E8FE-483C-AE62-2B42F6B37035}|Academy.Repository\\Academy.Repository.csproj|c:\\users\\nargis\\desktop\\18-consoleapp\\academysystem\\academy.repository\\repositories\\implimentation\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9517F48-E8FE-483C-AE62-2B42F6B37035}|Academy.Repository\\Academy.Repository.csproj|solutionrelative:academy.repository\\repositories\\implimentation\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9517F48-E8FE-483C-AE62-2B42F6B37035}|Academy.Repository\\Academy.Repository.csproj|c:\\users\\nargis\\desktop\\18-consoleapp\\academysystem\\academy.repository\\repositories\\implimentation\\grouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9517F48-E8FE-483C-AE62-2B42F6B37035}|Academy.Repository\\Academy.Repository.csproj|solutionrelative:academy.repository\\repositories\\implimentation\\grouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9517F48-E8FE-483C-AE62-2B42F6B37035}|Academy.Repository\\Academy.Repository.csproj|c:\\users\\nargis\\desktop\\18-consoleapp\\academysystem\\academy.repository\\repositories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9517F48-E8FE-483C-AE62-2B42F6B37035}|Academy.Repository\\Academy.Repository.csproj|solutionrelative:academy.repository\\repositories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2836B5C3-2543-4A1C-9848-10F81DAC025A}|Academy.Presentation\\Academy.Presentation.csproj|c:\\users\\nargis\\desktop\\18-consoleapp\\academysystem\\academy.presentation\\helpers\\menus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2836B5C3-2543-4A1C-9848-10F81DAC025A}|Academy.Presentation\\Academy.Presentation.csproj|solutionrelative:academy.presentation\\helpers\\menus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,6 +13,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{7C30F792-CF39-4785-8271-36F02A731C03}|Academy.Service\\Academy.Service.csproj|c:\\users\\nargis\\desktop\\18-consoleapp\\academysystem\\academy.service\\services\\implimentations\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C30F792-CF39-4785-8271-36F02A731C03}|Academy.Service\\Academy.Service.csproj|solutionrelative:academy.service\\services\\implimentations\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9517F48-E8FE-483C-AE62-2B42F6B37035}|Academy.Repository\\Academy.Repository.csproj|c:\\users\\nargis\\desktop\\18-consoleapp\\academysystem\\academy.repository\\repositories\\implimentation\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9517F48-E8FE-483C-AE62-2B42F6B37035}|Academy.Repository\\Academy.Repository.csproj|solutionrelative:academy.repository\\repositories\\implimentation\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9517F48-E8FE-483C-AE62-2B42F6B37035}|Academy.Repository\\Academy.Repository.csproj|c:\\users\\nargis\\desktop\\18-consoleapp\\academysystem\\academy.repository\\repositories\\implimentation\\grouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9517F48-E8FE-483C-AE62-2B42F6B37035}|Academy.Repository\\Academy.Repository.csproj|solutionrelative:academy.repository\\repositories\\implimentation\\grouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2836B5C3-2543-4A1C-9848-10F81DAC025A}|Academy.Presentation\\Academy.Presentation.csproj|c:\\users\\nargis\\desktop\\18-consoleapp\\academysystem\\academy.presentation\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2836B5C3-2543-4A1C-9848-10F81DAC025A}|Academy.Presentation\\Academy.Presentation.csproj|solutionrelative:academy.presentation\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2836B5C3-2543-4A1C-9848-10F81DAC025A}|Academy.Presentation\\Academy.Presentation.csproj|c:\\users\\nargis\\desktop\\18-consoleapp\\academysystem\\academy.presentation\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2836B5C3-2543-4A1C-9848-10F81DAC025A}|Academy.Presentation\\Academy.Presentation.csproj|solutionrelative:academy.presentation\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2836B5C3-2543-4A1C-9848-10F81DAC025A}|Academy.Presentation\\Academy.Presentation.csproj|c:\\users\\nargis\\desktop\\18-consoleapp\\academysystem\\academy.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,124 +62,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StudentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Repositories\\Implimentation\\StudentRepository.cs",
-              "RelativeDocumentMoniker": "Academy.Repository\\Repositories\\Implimentation\\StudentRepository.cs",
-              "ToolTip": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Repositories\\Implimentation\\StudentRepository.cs",
-              "RelativeToolTip": "Academy.Repository\\Repositories\\Implimentation\\StudentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T12:00:36.538Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "StudentController.cs",
               "DocumentMoniker": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Presentation\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "Academy.Presentation\\Controllers\\StudentController.cs",
               "ToolTip": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Presentation\\Controllers\\StudentController.cs",
               "RelativeToolTip": "Academy.Presentation\\Controllers\\StudentController.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAA1wI8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwBAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-10T11:48:45.975Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GroupRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Repositories\\Implimentation\\GroupRepository.cs",
-              "RelativeDocumentMoniker": "Academy.Repository\\Repositories\\Implimentation\\GroupRepository.cs",
-              "ToolTip": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Repositories\\Implimentation\\GroupRepository.cs",
-              "RelativeToolTip": "Academy.Repository\\Repositories\\Implimentation\\GroupRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwDUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T15:14:19.372Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "GroupController.cs",
               "DocumentMoniker": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Presentation\\Controllers\\GroupController.cs",
               "RelativeDocumentMoniker": "Academy.Presentation\\Controllers\\GroupController.cs",
               "ToolTip": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Presentation\\Controllers\\GroupController.cs",
               "RelativeToolTip": "Academy.Presentation\\Controllers\\GroupController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAOcAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAKkAAAAAAAAAAADwvw4BAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-07T15:10:27.008Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Menus.cs",
-              "DocumentMoniker": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Presentation\\Helpers\\Menus.cs",
-              "RelativeDocumentMoniker": "Academy.Presentation\\Helpers\\Menus.cs",
-              "ToolTip": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Presentation\\Helpers\\Menus.cs",
-              "RelativeToolTip": "Academy.Presentation\\Helpers\\Menus.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAxAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "GroupRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Repositories\\Implimentation\\GroupRepository.cs",
+              "RelativeDocumentMoniker": "Academy.Repository\\Repositories\\Implimentation\\GroupRepository.cs",
+              "ToolTip": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Repositories\\Implimentation\\GroupRepository.cs",
+              "RelativeToolTip": "Academy.Repository\\Repositories\\Implimentation\\GroupRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T13:53:01.391Z"
+              "WhenOpened": "2025-11-07T15:14:19.372Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Repositories\\Implimentation\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "Academy.Repository\\Repositories\\Implimentation\\StudentRepository.cs",
+              "ToolTip": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Repositories\\Implimentation\\StudentRepository.cs",
+              "RelativeToolTip": "Academy.Repository\\Repositories\\Implimentation\\StudentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T12:00:36.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "GroupService.cs",
               "DocumentMoniker": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Service\\Services\\Implimentations\\GroupService.cs",
               "RelativeDocumentMoniker": "Academy.Service\\Services\\Implimentations\\GroupService.cs",
               "ToolTip": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Service\\Services\\Implimentations\\GroupService.cs",
               "RelativeToolTip": "Academy.Service\\Services\\Implimentations\\GroupService.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwCkAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T15:16:51.039Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Repositories\\Interfaces\\IRepository.cs",
-              "RelativeDocumentMoniker": "Academy.Repository\\Repositories\\Interfaces\\IRepository.cs",
-              "ToolTip": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Repositories\\Interfaces\\IRepository.cs",
-              "RelativeToolTip": "Academy.Repository\\Repositories\\Interfaces\\IRepository.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAkwB4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T15:15:09.947Z",
+              "WhenOpened": "2025-11-07T15:16:51.039Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "StudentService.cs",
               "DocumentMoniker": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Service\\Services\\Implimentations\\StudentService.cs",
               "RelativeDocumentMoniker": "Academy.Service\\Services\\Implimentations\\StudentService.cs",
               "ToolTip": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Service\\Services\\Implimentations\\StudentService.cs",
               "RelativeToolTip": "Academy.Service\\Services\\Implimentations\\StudentService.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAgwDwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAACgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T12:28:54.745Z"
+              "WhenOpened": "2025-11-10T12:28:54.745Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
+              "Title": "Menus.cs",
+              "DocumentMoniker": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Presentation\\Helpers\\Menus.cs",
+              "RelativeDocumentMoniker": "Academy.Presentation\\Helpers\\Menus.cs",
+              "ToolTip": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Presentation\\Helpers\\Menus.cs",
+              "RelativeToolTip": "Academy.Presentation\\Helpers\\Menus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T13:53:01.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Presentation\\Program.cs",
               "RelativeDocumentMoniker": "Academy.Presentation\\Program.cs",
               "ToolTip": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Presentation\\Program.cs",
               "RelativeToolTip": "Academy.Presentation\\Program.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAcwD4AAABAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T08:47:23.83Z"
+              "WhenOpened": "2025-11-07T08:47:23.83Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Domain\\Entities\\Student.cs",
               "RelativeDocumentMoniker": "Academy.Domain\\Entities\\Student.cs",
@@ -195,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "IStudentService.cs",
               "DocumentMoniker": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Service\\Services\\Interfaces\\IStudentService.cs",
               "RelativeDocumentMoniker": "Academy.Service\\Services\\Interfaces\\IStudentService.cs",
@@ -207,7 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "NotFoundException.cs",
               "DocumentMoniker": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Exceptions\\NotFoundException.cs",
               "RelativeDocumentMoniker": "Academy.Repository\\Exceptions\\NotFoundException.cs",
@@ -219,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Academy.Repository\\Data\\AppDbContext.cs",
@@ -231,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Helper.cs",
               "DocumentMoniker": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Presentation\\Helpers\\Helper.cs",
               "RelativeDocumentMoniker": "Academy.Presentation\\Helpers\\Helper.cs",

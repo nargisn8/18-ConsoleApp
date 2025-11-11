@@ -17,13 +17,11 @@ namespace Academy.Repository.Repositories.Interfaces
         List<T> GetAllGroupsByTeacher(Predicate<T> predicate);
         List<T> GetAllGroupsByRoom(Predicate<T> predicate);
         List<T> GetAllGroups(Predicate<T> predicate);
-        List<T> SearchMethodForGroupsByName(Predicate<T> predicate);
         void CreateStudent(T data);
         void UpdateStudent(T data);
         void DeleteStudent(T data);
         List<T> GetStudentByAge(Predicate<T> predicate);
         List<T> GetAllStudentsByGroupId(Predicate<T> predicate);
-        List<T> SearchMethodForStudentsByNameOrSurname(Predicate<T> predicate);
         List<T> GetAll(Predicate<T> predicate );
         
 

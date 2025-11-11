@@ -72,16 +72,6 @@ namespace Academy.Repository.Repositories.Implimentation
             throw new NotImplementedException();
         }
 
-        public List<Group> SearchMethodForGroupsByName(Predicate<Group> predicate)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Group> SearchMethodForStudentsByNameOrSurname(Predicate<Group> predicate)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Update(Group data)
         {
             Group dbgroup = Get(g => g.Id == data.Id);
