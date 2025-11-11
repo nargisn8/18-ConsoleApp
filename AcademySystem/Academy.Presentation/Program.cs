@@ -56,9 +56,9 @@ namespace Academy.Presentation
                         case (int)Menus.GetStudentById:
                             studentController.GetStudentById();
                             break;
-                        case (int)Menus.DeleteStudent:
-                            studentController.Delete();
-                            break;
+                        //case (int)Menus.DeleteStudent:
+                        //    studentController.Delete();
+                        //    break;
                         case (int)Menus.GetStudentByAge:
                             studentController.GetStudentByAge();
                             break;

@@ -27,14 +27,24 @@ namespace Academy.Repository.Repositories.Implimentation
             
         }
 
+        public void CreateStudent(Student data)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Delete(Student data)
         {
             throw new NotImplementedException();
         }
 
-        public Student Get(Predicate<Student> predicate)
+        public void DeleteStudent(Student data)
         {
-            throw new NotImplementedException();
+            AppDbContext<Student>.datas.Remove(data);
+        }
+
+        public Student GetStudentById(Predicate<Student> predicate)
+        {
+            return predicate != null ? AppDbContext<Student>.datas.Find(predicate) : null;
         }
 
         public List<Student> GetAllGroups(Predicate<Student> predicate)
@@ -52,9 +62,43 @@ namespace Academy.Repository.Repositories.Implimentation
             throw new NotImplementedException();
         }
 
+        public List<Student> GetAllStudentsByGroupId(Predicate<Student> predicate)
+        {
+            return predicate != null ? AppDbContext<Student>.datas.FindAll(predicate) : AppDbContext<Student>.datas;
+        }
+
+        public List<Student> GetStudentByAge(Predicate<Student> predicate)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Student> SearchMethodForGroupsByName(Predicate<Student> predicate)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Student> SearchMethodForStudentsByNameOrSurname(Predicate<Student> predicate)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Update(Student data)
         {
             throw new NotImplementedException();
+        }
+
+        public void UpdateStudent(Student data)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Student Get(Predicate<Student> predicate)
+        {
+            throw new NotImplementedException();
+        }
+        public List<Student> GetAll(Predicate<Student> predicate = null)
+        {
+            return predicate != null ? AppDbContext<Student>.datas.FindAll(predicate) : AppDbContext<Student>.datas;
         }
     }
 }

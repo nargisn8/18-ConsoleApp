@@ -1,4 +1,5 @@
 ﻿using Academy.Domain.Common;
+using Academy.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,8 +17,15 @@ namespace Academy.Repository.Repositories.Interfaces
         List<T> GetAllGroupsByTeacher(Predicate<T> predicate);
         List<T> GetAllGroupsByRoom(Predicate<T> predicate);
         List<T> GetAllGroups(Predicate<T> predicate);
+        List<T> SearchMethodForGroupsByName(Predicate<T> predicate);
+        void CreateStudent(T data);
+        void UpdateStudent(T data);
+        void DeleteStudent(T data);
+        List<T> GetStudentByAge(Predicate<T> predicate);
+        List<T> GetAllStudentsByGroupId(Predicate<T> predicate);
+        List<T> SearchMethodForStudentsByNameOrSurname(Predicate<T> predicate);
+        List<Student> GetAll(Predicate<T> predicate );
         
-
 
     }
 }

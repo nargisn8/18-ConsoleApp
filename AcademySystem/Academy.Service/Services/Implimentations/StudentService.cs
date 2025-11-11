@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Academy.Service.Services.Implimentations
@@ -35,6 +36,30 @@ namespace Academy.Service.Services.Implimentations
             _count++;
             return student;
 
+        }
+
+        public void Delete(int groupId) 
+        {
+            Student student = GetStudentById(groupId);
+
+            _studentRepository.Delete(student);
+        }
+
+        public Student GetStudentById(int Id)
+        {
+            Student student = _studentRepository.GetStudentById(s => s.Id == Id);
+
+            if (student is null) return null;
+
+            return student;
+        }
+        public List<Student> GetAllStudentsByGroupId(int groupid)
+        {
+            return _studentRepository.GetAll(s => s.Group.Id == groupid);
+        }
+        public List<Student> GetAll()
+        {
+            return _studentRepository.GetAll();
         }
     }
 }
