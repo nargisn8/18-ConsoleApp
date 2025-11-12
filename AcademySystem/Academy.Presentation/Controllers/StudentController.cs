@@ -9,12 +9,14 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using Group = Academy.Domain.Entities.Group;
 
 namespace Academy.Presentation.Controllers
 {
     public class StudentController
     {
         StudentService _studentService = new StudentService();
+        GroupService _groupService = new GroupService();
         public void Create()
         {
         GroupId: Helper.PrintConsole(ConsoleColor.Blue, "Add Group Id");
@@ -101,6 +103,9 @@ namespace Academy.Presentation.Controllers
                     Helper.PrintConsole(ConsoleColor.Blue, "Add Student new surname");
                     string updateSurname = Console.ReadLine();
 
+                    Helper.PrintConsole(ConsoleColor.Blue, "Add Student new surname");
+                    string updategroupName = Console.ReadLine();
+
                 Age: Helper.PrintConsole(ConsoleColor.Blue, "Add Student new age");
                     string updateAge = Console.ReadLine();
 
@@ -110,14 +115,20 @@ namespace Academy.Presentation.Controllers
 
                     if (isstudentage || updateAge == "" || updateName == "" || updateSurname == "")
                     {
+                        List<Group> groups = _groupService.GetAllGroups();
+
+                        foreach (var item in groups)
+                        {
+                            if (item.Name == groupName)
+                            {
+
+                            }
+                        }
+
                         bool isAgeEmpty = string.IsNullOrEmpty(updateAge);
                         bool isNameEmpty = string.IsNullOrEmpty(updateName);
                         bool isSurnameEmpty = string.IsNullOrEmpty(updateSurname);
 
-                        if (isAgeEmpty)
-                        {
-                            age = findGroup.Age;
-                        }
                         if (isNameEmpty)
                         {
                             updateName = findGroup.Name;
@@ -125,6 +136,10 @@ namespace Academy.Presentation.Controllers
                         if (isSurnameEmpty)
                         {
                             updateSurname = findGroup.Surname;
+                        }
+                        if (isAgeEmpty)
+                        {
+                            age = findGroup.Age;
                         }
                         Student student = new Student { Name = updateName, Surname = updateSurname, Age = age };
 
@@ -149,7 +164,7 @@ namespace Academy.Presentation.Controllers
                 else
                 {
                     Helper.PrintConsole(ConsoleColor.Red, "Student not found");
-                    goto Studentid;
+                    return;
                 }
             }
             else

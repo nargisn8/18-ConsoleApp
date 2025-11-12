@@ -71,7 +71,9 @@ namespace Academy.Presentation
                         case (int)Menus.SearchMethodForStudentsByNameOrSurname:
                             studentController.SearchMethodForStudentsByNameOrSurname();
                             break;
-
+                        case (int)Menus.GetAll:
+                            studentController.GetAll();
+                            break;
 
 
                     }
@@ -86,7 +88,7 @@ namespace Academy.Presentation
         }
         private static void GetMenus()
         {
-            Helper.PrintConsole(ConsoleColor.Yellow, "1 - Create Group,\n2 - Update group,\n3 - Delete group,\n4 - Get Group by id,\n5 - Get All Groups By Teacher,\n6 - Get All Groups By Room,\n7 - Get All Groups,\n8 - Create Student,\n9 - Update Student,\n10 - Get Student By Id,\n11 - Delete Student,\n12 - Get Student By Age,\n13 - Get All Students By Group Id,\n14 - Search Method For Groups By Name,\n15 - Search Method For Students By Name Or Surname");
+            Helper.PrintConsole(ConsoleColor.Yellow, "1 - Create Group,\n2 - Update group,\n3 - Delete group,\n4 - Get Group by id,\n5 - Get All Groups By Teacher,\n6 - Get All Groups By Room,\n7 - Get All Groups,\n8 - Create Student,\n9 - Update Student,\n10 - Get Student By Id,\n11 - Delete Student,\n12 - Get Student By Age,\n13 - Get All Students By Group Id,\n14 - Search Method For Groups By Name,\n15 - Search Method For Students By Name Or Surname,\n16 - GetAll");
         }
     }
 }

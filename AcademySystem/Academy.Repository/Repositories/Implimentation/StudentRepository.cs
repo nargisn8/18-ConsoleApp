@@ -75,13 +75,17 @@ namespace Academy.Repository.Repositories.Implimentation
             }
 
             if (!string.IsNullOrEmpty(data.Surname))
-            {
+            {   
                 data.Surname = dbgroup.Surname;
             }
 
             if (!string.IsNullOrEmpty(data.Age.ToString()))
             {
                 data.Age = dbgroup.Age;
+            }
+            if (!string.IsNullOrEmpty(data.Group.Name))
+            {
+                data.Group.Name = dbgroup.Group.Name;
             }
         }
 

@@ -22,6 +22,7 @@ namespace Academy.Presentation.Helpers
         GetStudentByAge = 12,
         GetAllStudentsByGroupId = 13,
         SearchMethodForGroupsByName = 14,
-        SearchMethodForStudentsByNameOrSurname = 15
+        SearchMethodForStudentsByNameOrSurname = 15,
+        GetAll = 16
     }
 }

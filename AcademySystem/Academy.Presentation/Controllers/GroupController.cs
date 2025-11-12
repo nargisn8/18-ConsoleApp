@@ -17,15 +17,9 @@ namespace Academy.Presentation.Controllers
         {
            
 
-        Name: Helper.PrintConsole(ConsoleColor.Blue, "Add Name");
+         Helper.PrintConsole(ConsoleColor.Blue, "Add Name");
             string groupName = Console.ReadLine();
-            if (string.IsNullOrWhiteSpace(groupName) || groupName.Any(char.IsDigit))
-            {
-                Helper.PrintConsole(ConsoleColor.Red, "Error: The name can only consist of letters");
-
-                goto Name;
-
-            }
+            
 
         Teacher: Helper.PrintConsole(ConsoleColor.Blue, "Add Teacher");
             string groupTeacher = Console.ReadLine();
