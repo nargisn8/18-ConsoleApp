@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Presentation\\Academy.Presentation.csproj": {}
+    "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Presentation\\Academy.Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Domain\\Academy.Domain.csproj": {
+    "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Domain\\Academy.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Domain\\Academy.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Domain\\Academy.Domain.csproj",
         "projectName": "Academy.Domain",
-        "projectPath": "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Domain\\Academy.Domain.csproj",
-        "packagesPath": "C:\\Users\\ca r221.14\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Domain\\Academy.Domain.csproj",
+        "packagesPath": "C:\\Users\\Nargis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ca r221.14\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nargis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -65,24 +65,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Presentation\\Academy.Presentation.csproj": {
+    "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Presentation\\Academy.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Presentation\\Academy.Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Presentation\\Academy.Presentation.csproj",
         "projectName": "Academy.Presentation",
-        "projectPath": "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Presentation\\Academy.Presentation.csproj",
-        "packagesPath": "C:\\Users\\ca r221.14\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Presentation\\obj\\",
+        "projectPath": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Presentation\\Academy.Presentation.csproj",
+        "packagesPath": "C:\\Users\\Nargis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ca r221.14\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nargis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -91,15 +91,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Service\\Academy.Service.csproj": {
-                "projectPath": "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Service\\Academy.Service.csproj"
+              "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Service\\Academy.Service.csproj": {
+                "projectPath": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Service\\Academy.Service.csproj"
               }
             }
           }
@@ -113,7 +112,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -134,24 +134,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Academy.Repository.csproj": {
+    "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Academy.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Academy.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Academy.Repository.csproj",
         "projectName": "Academy.Repository",
-        "projectPath": "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Academy.Repository.csproj",
-        "packagesPath": "C:\\Users\\ca r221.14\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\obj\\",
+        "projectPath": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Academy.Repository.csproj",
+        "packagesPath": "C:\\Users\\Nargis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ca r221.14\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nargis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -160,15 +160,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Domain\\Academy.Domain.csproj": {
-                "projectPath": "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Domain\\Academy.Domain.csproj"
+              "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Domain\\Academy.Domain.csproj": {
+                "projectPath": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Domain\\Academy.Domain.csproj"
               }
             }
           }
@@ -182,7 +181,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -203,24 +203,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Service\\Academy.Service.csproj": {
+    "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Service\\Academy.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Service\\Academy.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Service\\Academy.Service.csproj",
         "projectName": "Academy.Service",
-        "projectPath": "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Service\\Academy.Service.csproj",
-        "packagesPath": "C:\\Users\\ca r221.14\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Service\\obj\\",
+        "projectPath": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Service\\Academy.Service.csproj",
+        "packagesPath": "C:\\Users\\Nargis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ca r221.14\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nargis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -229,15 +229,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Academy.Repository.csproj": {
-                "projectPath": "C:\\Users\\ca r221.14\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Academy.Repository.csproj"
+              "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Academy.Repository.csproj": {
+                "projectPath": "C:\\Users\\Nargis\\Desktop\\18-ConsoleApp\\AcademySystem\\Academy.Repository\\Academy.Repository.csproj"
               }
             }
           }
@@ -251,7 +250,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -272,7 +272,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

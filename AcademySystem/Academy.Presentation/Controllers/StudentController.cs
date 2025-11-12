@@ -1,5 +1,6 @@
 ﻿using Academy.Domain.Entities;
 using Academy.Presentation.Helpers;
+using Academy.Repository.Repositories.Implimentation;
 using Academy.Service.Services.Implimentations;
 using Academy.Service.Services.Interfaces;
 using System;
@@ -17,11 +18,20 @@ namespace Academy.Presentation.Controllers
     {
         StudentService _studentService = new StudentService();
         GroupService _groupService = new GroupService();
+        StudentRepository _studentRepository = new StudentRepository();
         public void Create()
         {
+            List<Group> groups = _groupService.GetAllGroups();
+
+            if (groups == null || groups.Count == 0)
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Group not found.");
+                return; 
+            }
+
         GroupId: Helper.PrintConsole(ConsoleColor.Blue, "Add Group Id");
 
-            string groupId = Console.ReadLine();
+            string groupId = Console.ReadLine(); 
 
             int selectedGroupId;
 
@@ -30,7 +40,14 @@ namespace Academy.Presentation.Controllers
             if (isSelectedId)
             {
             Name: Helper.PrintConsole(ConsoleColor.Blue, "Add Student Name");
-                string studentName = Console.ReadLine();
+                string studentName = Console.ReadLine()?.Trim();
+
+                if (studentName.Contains(' '))
+                {
+                    Helper.PrintConsole(ConsoleColor.Red, "Error: Student name cannot contain spaces!");
+                    return;
+                }
+
                 if (string.IsNullOrWhiteSpace(studentName) || studentName.Any(char.IsDigit))
                 {
                     Helper.PrintConsole(ConsoleColor.Red, "Error: The name can only consist of letters");
@@ -38,14 +55,25 @@ namespace Academy.Presentation.Controllers
 
                 }
 
+                studentName = char.ToUpper(studentName[0]) + studentName.Substring(1).ToLower();
+
             Surname: Helper.PrintConsole(ConsoleColor.Blue, "Add Student Surname");
-                string studentSurname = Console.ReadLine();
+                string studentSurname = Console.ReadLine()?.Trim();
+
+                if (studentSurname.Contains(' '))
+                {
+                    Helper.PrintConsole(ConsoleColor.Red, "Error: Stduent surname cannot contain spaces!");
+                    return;
+                }
+
                 if (string.IsNullOrWhiteSpace(studentSurname) || studentSurname.Any(char.IsDigit))
                 {
                     Helper.PrintConsole(ConsoleColor.Red, "Error: The surname can only consist of letters");
                     goto Surname;
 
                 }
+                studentSurname = char.ToUpper(studentSurname[0]) + studentSurname.Substring(1).ToLower();
+
             Age: Helper.PrintConsole(ConsoleColor.Blue, "Add Student Age");
                 string studentAge = Console.ReadLine();
 
@@ -61,7 +89,17 @@ namespace Academy.Presentation.Controllers
 
                     if (result != null)
                     {
-                        Helper.PrintConsole(ConsoleColor.DarkMagenta, $"Student Id: {student.Id}, Name: {student.Name}, Surname: {student.Surname}, Age: {student.Age}, Group: {student.Group.Name} ");
+
+                        if (age > 16 && age < 65)
+                        {
+                            Helper.PrintConsole(ConsoleColor.DarkMagenta, $"Student Id: {student.Id}, Name: {student.Name}, Surname: {student.Surname}, Age: {student.Age}, Group: {student.Group.Name} ");
+                        }
+                        else
+                        {
+                            Helper.PrintConsole(ConsoleColor.Red, "Error: Age is inappropriate.");
+                            goto Age;
+                        }
+                       
                     }
                     else
                     {
@@ -82,98 +120,92 @@ namespace Academy.Presentation.Controllers
             }
 
         }
-        public void Update()
+        public void Update(int selectTrueOption)
         {
-        Studentid: Helper.PrintConsole(ConsoleColor.Blue, "Add Student Id");
-            string studentId = Console.ReadLine();
+            List<Student> students = _studentService.GetAll();
 
-            int id;
-
-            bool isstudentId = int.TryParse(studentId, out id);
-
-            if (isstudentId)
+            if (students.Count == 0)
             {
-                var findGroup = _studentService.GetStudentById(id);
+                Helper.PrintConsole(ConsoleColor.Red, "There is no group to update!");
+                return;
+            }
 
-                if (findGroup != null)
+        FalseUpdate:
+            Helper.PrintConsole(ConsoleColor.Green, "Enter the ID of the group you want to update:");
+            string idStr = Console.ReadLine();
+
+            if (int.TryParse(idStr, out int idInt))
+            {
+                var findStudent = _studentService.GetStudentById(idInt);
+                if (findStudent == null)
                 {
-                    Helper.PrintConsole(ConsoleColor.Blue, "Add Student new name");
-                    string updateName = Console.ReadLine();
-
-                    Helper.PrintConsole(ConsoleColor.Blue, "Add Student new surname");
-                    string updateSurname = Console.ReadLine();
-
-                    Helper.PrintConsole(ConsoleColor.Blue, "Add Student new surname");
-                    string updategroupName = Console.ReadLine();
-
-                Age: Helper.PrintConsole(ConsoleColor.Blue, "Add Student new age");
-                    string updateAge = Console.ReadLine();
-
-                    int age;
-
-                    bool isstudentage = int.TryParse(updateAge, out age);
-
-                    if (isstudentage || updateAge == "" || updateName == "" || updateSurname == "")
-                    {
-                        List<Group> groups = _groupService.GetAllGroups();
-
-                        foreach (var item in groups)
-                        {
-                            if (item.Name == groupName)
-                            {
-
-                            }
-                        }
-
-                        bool isAgeEmpty = string.IsNullOrEmpty(updateAge);
-                        bool isNameEmpty = string.IsNullOrEmpty(updateName);
-                        bool isSurnameEmpty = string.IsNullOrEmpty(updateSurname);
-
-                        if (isNameEmpty)
-                        {
-                            updateName = findGroup.Name;
-                        }
-                        if (isSurnameEmpty)
-                        {
-                            updateSurname = findGroup.Surname;
-                        }
-                        if (isAgeEmpty)
-                        {
-                            age = findGroup.Age;
-                        }
-                        Student student = new Student { Name = updateName, Surname = updateSurname, Age = age };
-
-                        var resultStudent = _studentService.Update(age, student);
-
-                        if (resultStudent != null)
-                        {
-                            Helper.PrintConsole(ConsoleColor.Red, "Student not found, please try again.");
-                            goto Studentid;
-                        }
-                        else
-                        {
-                            Helper.PrintConsole(ConsoleColor.DarkMagenta, $"Group Id: {student.Id}, Name: {student.Name}, Surname: {student.Surname}, Age: {student.Age}, Group: {student.Group.Name}");
-                        }
-                    }
-                    else
-                    {
-                        Helper.PrintConsole(ConsoleColor.Red, "Add correct age type");
-                        goto Age;
-                    }
+                    Helper.PrintConsole(ConsoleColor.Red, "No group found with that ID!");
+                    goto FalseUpdate;
                 }
-                else
+
+            FalseGroup:
+                Helper.PrintConsole(ConsoleColor.Green, "Add a new group name:");
+                string studentName = Console.ReadLine().Trim().ToLower();
+
+                if (string.IsNullOrWhiteSpace(studentName) || int.TryParse(studentName, out selectTrueOption))
                 {
-                    Helper.PrintConsole(ConsoleColor.Red, "Student not found");
-                    return;
+                    Helper.PrintConsole(ConsoleColor.Red, "Group name cannot be empty or numeric!");
+                    goto FalseGroup;
                 }
+
+            FalseName:
+                Helper.PrintConsole(ConsoleColor.Green, "Add a group teacher:");
+                string studentSurname = Console.ReadLine().Trim();
+
+                if (string.IsNullOrWhiteSpace(studentSurname) ||
+                    studentSurname.Any(char.IsDigit) ||
+                    studentSurname.Contains(" "))
+                {
+                    Helper.PrintConsole(ConsoleColor.Red, "Teacher name cannot be empty, contain numbers, or have spaces!");
+                    goto FalseName;
+                }
+
+                studentSurname = Helper.Capitalize(studentSurname);
+
+            FalseClass:
+                Helper.PrintConsole(ConsoleColor.Green, "Add a room number:");
+                string age = Console.ReadLine().Trim();
+                int studentAge;
+
+                if (string.IsNullOrWhiteSpace(studentAge))
+                {
+                    studentAge = findStudent.Age;
+                }
+                else if (!int.TryParse(age, out studentAge))
+                {
+                    Helper.PrintConsole(ConsoleColor.Red, "Select a correct room number!");
+                    goto FalseClass;
+                }
+
+
+               
+
+                Group updatedGroup = new Group
+                {
+                    Name = studentName,
+                    Surname = studentSurname,
+                    Age = studentAge,
+                    Group = studentGroup
+                };
+
+                _studentService.Update(idInt, updatedGroup);
+                Helper.PrintConsole(ConsoleColor.DarkCyan, "Group updated successfully");
+                Console.WriteLine("");
+                Helper.PrintConsole(ConsoleColor.DarkCyan,
+                    $"Group ID: {idInt}\nGroup name: {updatedGroup.Name}\nTeacher: {updatedGroup.Teacher}\nGroup room: {updatedGroup.Room}\n");
             }
             else
             {
-                Helper.PrintConsole(ConsoleColor.Red, "Add correct Studentid type");
-                goto Studentid;
+                Helper.PrintConsole(ConsoleColor.Red, "Incorrect ID format!");
+                goto FalseUpdate;
             }
-
         }
+       
         public void GetStudentById()
         {
         Studentid: Helper.PrintConsole(ConsoleColor.Blue, "Add Id");
@@ -296,6 +328,9 @@ namespace Academy.Presentation.Controllers
                             Helper.PrintConsole(ConsoleColor.DarkMagenta, $"Id: {student.Id}, Name: {student.Name}, Surname: {student.Surname}, Age: {student.Age}, Group: {student.Group.Name}");
                         }
                         found = true;
+                        student.Name = char.ToUpper(student.Name[0]) + student.Name.Substring(1).ToLower();
+                        student.Surname = char.ToUpper(student.Surname[0]) + student.Surname.Substring(1).ToLower();
+                        student.Group.Name = char.ToUpper(student.Group.Name[0]) + student.Group.Name.Substring(1).ToLower();
                     }
                 }
                 else

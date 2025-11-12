@@ -14,7 +14,7 @@ namespace Academy.Service.Services.Interfaces
         void Delete(int id);
         Group GetGroupById(int id);
         List<Group> GetAllGroupsByTeacher(string teacher);
-        List<Group> GetAllGroupsByRoom(int room);
+        List<Group> GetAllGroupsByRoom(string room);
         List<Group> GetAllGroups();
         List<Group> SearchMethodForGroupsByName(string name);
 

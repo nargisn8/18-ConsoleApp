@@ -42,7 +42,7 @@ namespace Academy.Service.Services.Implimentations
             return _groupRepository.GetAllGroups();
         }
 
-        public List<Group> GetAllGroupsByRoom(int room)
+        public List<Group> GetAllGroupsByRoom(string room)
         {
             return _groupRepository.GetAllGroups(g => g.Room == room);
         }

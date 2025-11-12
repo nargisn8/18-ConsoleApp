@@ -84,19 +84,20 @@ namespace Academy.Service.Services.Implimentations
 
             return result;
         }
-        public Student Update(int id, Student student)
+        public Student Update()
         {
-            Student dbstudent = GetStudentById(id);
-            if (dbstudent is null) return null;
+            Student dbStudent = GetStudentById(id);
 
-            dbstudent.Name = student.Name;
-            dbstudent.Surname = student.Surname;
-            dbstudent.Age = student.Age;
-            dbstudent.Id = student.Id;
+            if (dbStudent == null) return null;
 
-            _studentRepository.Update(dbstudent);
+            dbStudent.Name = student.Name;
+            dbStudent.Surname = student.Surname;
+            dbStudent.Age = student.Age;
+            dbStudent.Group = student.Group;
 
-            return dbstudent;
+            _groupRepository.Update(dbStudent);
+
+            return dbStudent;
         }
     }
 }
